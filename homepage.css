@@ -1,0 +1,212 @@
+*/
+
+/* ---------------------------------------- */
+/* BASIC SETUP */
+/* ---------------------------------------- */
+
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html    {
+    color: #555;
+    font-family: Raleway;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility; /* Enables text render in the best way  */    
+}
+
+
+/* .clearfix { zoom: 1;} */
+.clearfix::after {
+    content: ',';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+/*  SECTIONS  ============================================================================= */
+
+
+
+/*  GROUPING  ============================================================================= */
+
+.row {
+    zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+    max-width: 1140px;
+    margin: 0 auto; /* top and bottom = 0, right and left = auto */
+}
+
+.row:before,
+.row:after {
+    content:"";
+    display:table;
+}
+.row:after {
+    clear:both;
+}
+
+button{
+  width:170px;
+  height: 50px;
+  color: black;
+  background:  #FFBD59;
+  border: none;
+  font-size: 16px;
+  font-family: Raleway;
+}
+
+#reachoutBtn{
+  border-radius: 10px;
+}
+.navbar{
+    height: 110px;
+    color: white;
+    font-family: Raleway;
+}
+.navbar .container-fluid{
+    margin-left: 15%;
+
+}
+.navbar #navbarNav {
+    margin-right: 15%;
+}
+.navbar #navbarNav .navbar-nav{
+    justify-content:space-evenly;
+    align-items: center;
+    padding: 5px;
+}
+.navbar #navbarNav .navbar-nav .nav-link{
+    color: white;
+}
+.navbar-nav  .active  a { 
+    background-color: rgba(25, 25, 25, 1);
+    color: #FFBD59 ; 
+}
+
+#homesec{
+    height: 750px;
+    font-family: Raleway;
+}
+
+.container .row .col-sm-4{
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+.container .row .col-sm-6{
+    margin-left: 100px;
+    margin-top: 20%;
+}
+#aboutsec {
+    height: 700px;
+    background: #FAFAFA;
+    font-family: Raleway;
+    
+}
+#aboutsec .row .col-sm-5 {
+    margin-left: 220px;
+    margin-top: 150px;
+
+}
+#aboutsec .row .col-sm-4{
+  margin-top: 150px;
+}
+
+#eventssec{
+  align-content: center;
+  height: 900px;
+  font-family: Raleway;
+}
+
+#containerhead{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-family: Raleway;
+}
+#containerhead li {
+  display: inline-block;
+}
+
+ #containerhead li a{
+  color: black;
+  text-decoration: none;
+  display: block;
+  font-size: 18px;
+  line-height: 7em;
+  padding: 1em 3em;
+  font-family: Raleway;
+}
+#containerhead li.active a{
+    color: black;
+    font-weight: bolder;
+}
+#cardcontainer{
+  justify-content: center;
+  align-items: center;
+  float: center;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+.card-title{
+  font-family: Raleway;
+  font-weight: bold;
+  
+}
+.card-body{
+  background-color: #F0F0F0;
+}
+.card-text {
+  font-family: Raleway;
+  font-size: 16px;
+}
+
+#newslettersec{
+  height: 900px;
+  background-color: #FAFAFA;
+  padding: 20px;
+  align-content: center;
+  text-align: center;
+  justify-content: center;
+  font-family: Raleway;
+}
+#volunteersec{
+  margin-left: 15%;
+  margin-right: 15%;
+  font-family: Raleway;
+}
+#volunteersec .row .col-sm-6{
+  margin-top: 15%;
+}
+
+#volunteersec .row .col-sm-4{
+
+  margin-top: 5%;
+  margin-left: 150px;
+
+}
+#partnerships{
+  text-align: center;
+  justify-content: center;
+  padding-top: 90px;
+  font-family: Raleway;
+}
+#footer{
+  color: rgba(255, 255, 255, 255);
+  background-color: rgba(25, 25, 25, 1);
+  height: 400px;
+  font-family: Raleway;
+}
+#footer h6{
+  color: rgba(255, 189, 89, 1);
+}
+#footer .row{
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-top: 75px;
+}

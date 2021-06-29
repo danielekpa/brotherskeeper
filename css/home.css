@@ -1,0 +1,418 @@
+/* 
+Our colors -> #FFBD59, #191919
+ */
+
+/* BASIC SETUP */
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  color: #000;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  line-height: 120%;
+  font-size: 16px;
+  text-rendering: optimizeLegibility; /* Enables text render in the best way  */
+}
+
+
+/* ---------------------------------------- */
+/* REUSABLE COMPONENTS */
+/* ---------------------------------------- */
+
+
+.row {
+  max-width: 1200px;
+  margin: 0 auto; 
+}
+
+section {
+  padding: 200px 0;
+}
+
+h2, h3 {
+  font-weight: 600;
+  font-style: normal;
+  word-spacing: 4px;
+  margin-bottom: 32px;
+}
+
+h2 {
+  font-size: 250%;
+  line-height: 47px;
+}
+
+h3 {
+  font-size: 200%;
+  line-height: 38px;
+}
+
+.box {
+  margin-left: 1%;
+}
+
+.btn:link, .btn:visited { 
+  width: 190px;
+  height: 56px;
+  background-color: #FFBD59;
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-block;
+  border-radius: 8px;
+  color: #191919;
+  text-align: center;
+  padding: 17px 30px 20px 30px;  
+  border: 1px solid transparent;
+}
+
+.btn:hover {
+  transition: background-color 0.2s, color 0.2s, border 0.2s;
+  background-color: #fff;
+  border: 1px solid #FFBD59;
+  color: #FFBD59;
+} 
+
+.learn-more {
+  color: #000;
+  font-weight: 600;
+  line-height: 160%;
+}
+
+
+/* ---------------------------------------- */
+/*  NAV BAR    */
+/* ---------------------------------------- */
+
+
+nav{
+  width: 100%;
+  background-color: #191919;
+}
+
+
+.logo {
+  height: 100px;
+  width: auto;
+  float: left;
+  margin-top: 5px;
+}
+
+.main-nav{
+  float: right;
+  list-style: none;
+}
+
+.main-nav li{
+  display: inline-block;
+  margin-top: 38px;
+  margin-left: 42px;
+}
+
+.main-nav li:first-child {
+  margin-left: 0;
+}
+
+.main-nav li:last-child {
+  margin-top: 0;
+}
+
+.main-nav li a:link, .main-nav li a:visited{
+  color: #fff;
+  text-decoration: none;
+  font-size: 100%;
+  font-weight: 600;
+  padding: 8px 0;
+  border-bottom: 4px dotted transparent ;
+}
+
+.main-nav li a:hover, 
+.main-nav li a:active {
+
+  transition: border-bottom  0.2s, color 0.2s;
+  border-bottom: 4px dotted #FFBD59 ;
+  color: #FFBD59;  
+}
+
+.btn-nav {
+  width: 190px;
+  height: 56px; 
+  background-color: #FFBD59; 
+  border-radius: 8px; 
+  color: #000; 
+  font-size: 16px; 
+  font-weight: 600;
+  padding: 10px 30px; 
+  text-decoration: none; 
+  display: inline-block;
+  border: 1px solid transparent;
+}
+
+.btn-nav:hover {
+  transition: background-color 0.2s, color 0.2s, border 0.2s;
+  background-color: #191919;
+  border: 1px solid #FFBD59;
+  color: #FFBD59;
+
+}
+
+
+/* ---------------------------------------- */
+/*  HOME SECTION    */
+/* ---------------------------------------- */
+
+
+.home-section {
+  margin: 0px;
+  padding: 0px;
+}
+
+.herobox1 {
+  margin-top: 210px;
+}
+/* .home-sec-h2 {
+ 
+} */
+
+.herobox2 {
+  margin-top: 324px;
+  margin-right: 0px;
+}
+
+.home-section .long-copy {
+  margin-bottom: 30px;
+}
+
+.long-copy {
+  line-height: 160%;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 100%;
+}
+
+.hero-img{
+  height: auto;
+  width: 735px;
+}
+
+.btn-full:hover {
+  transition: background-color 0.2s, color 0.2s, border 0.2s;
+  background-color: #fff;
+  border: 1px solid #FFBD59;
+  color: #FFBD59;
+} 
+
+
+/* ---------------------------------------- */
+/*  ABOUT  SECTION    */
+/* ---------------------------------------- */
+
+
+.about-section {
+  background-color: #fafafa;
+  margin: 0px;
+  padding: 0px;
+}
+
+.aboutBox1 {
+  margin-top: 190px;
+}
+
+.aboutBox2 {
+  margin: 200px 0px;
+  margin-left: 1%;
+}
+
+.about-long-copy {
+  line-height: 160%;
+  font-size: 100%;
+  word-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+/* 
+.about-section::after {
+  display: block;
+    height: 1px;
+    background-color: #e67e22;
+    content: " ";
+    width: 500px;
+    margin: 0px auto 0px auto;
+} */
+
+
+/* ---------------------------------------- */
+/*  EVENTS  SECTION    */
+/* ---------------------------------------- */
+
+
+.events-section {
+  padding-top: 150px 0px;
+}
+
+.first-event-h3 {
+  text-align: right;
+}
+
+.second-event-h3 {
+  text-align: center;
+  font-weight: 300;
+}
+
+.third-event-h3 {
+  text-align: left;
+  font-weight: 300;
+}
+
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 0px 0px;
+  background-color: #F0F0F0;
+}
+
+.container::before {
+  float: left;
+  height: 72px;
+  background-color: #A60909;
+  content: "   ";
+  width: 8px;
+  margin: 0px 0 0px 0;
+}
+
+h5 {
+  font-weight: 75%;
+  font-size: 125%;
+  display: block;
+  padding:  16px 20px 0px 20px;
+  margin-bottom: 16px;
+  line-height: 150%;
+}
+
+.cardP {
+  padding:  0px 100px 0px 20px;
+  line-height: 160%;
+}
+
+.cardLabel {
+  display: inline-block;
+  background-color: #99E3B9;
+  color: #008037;
+  border-radius: 4px;
+  padding: 3px 8px;
+  margin: 15px 0px 15px 20px;
+  text-transform: uppercase;
+  font-size: 100%;
+}
+
+
+
+/* ---------------------------------------- */
+/*  NEWSLETTER  SECTION    */
+/* ---------------------------------------- */
+
+
+
+.newsletter-section {
+  text-align: center;
+  background: #FAFAFA;
+  padding: 160px 0px 90px 0px;
+}
+
+.newsletter-p {
+  font-size: 100%;
+  line-height: 160%;
+}
+
+.btn-sub {
+  margin-top: 32px;
+}
+
+
+/* ---------------------------------------- */
+/*  VOLUNTEER  SECTION    */
+/* ---------------------------------------- */
+
+
+.volunteer-section {
+  padding: 125px 0px;
+}
+
+.volunteer-p {
+  font-size: 100%;
+  font-weight: 100%;
+  line-height: 160%;
+  margin-top: 32px;
+}
+
+.btn-volunteer {
+  margin-top: 32px;
+}
+
+.img-volunteer {
+  margin-left: 115px;
+}
+
+
+
+/* ---------------------------------------- */
+/*  PARTNERSHIP  SECTION    */
+/* ---------------------------------------- */
+
+
+.partner-section {
+  background: #FAFAFA;
+  text-align: center;
+  margin: 100px 0px;
+}
+
+
+
+/* ---------------------------------------- */
+/*  FOOOTER  SECTION    */
+/* ---------------------------------------- */
+
+.footer-section {
+  background: #191919;
+  color: #fff;
+  padding: 0px;
+  padding-bottom: 65px;
+}
+
+.footer-column {
+  list-style: none;
+  line-height: 160%;
+}
+
+.footer-column li:first-child {
+  margin-top: 40px ;
+  color: #FFBD59;
+
+}
+
+.footer-column li {
+  margin-top: 16px ;
+}
+
+.footer-column li img {
+  width: 20px;
+  height: auto;
+}
+
+.footer-column li a {
+  padding-left: 3px;
+}
