@@ -21,22 +21,22 @@
   <title>Brother's Keeper</title>
 </head>
 <body>
-    <nav>
+    <nav class="mainNav">
         <div class="row">
             <div class="navbar">
                 <img class="logo" src="images/Brothers Keeper.png" alt="Brothers Keeper">
                 <ul class="main-nav">
-                <li><a href="#"> About </a></li>
-                <li><a href="#"> Events </a></li>      
-                <li><a href="#"> Newsletter </a></li>
-                <li><a href="#"> Volunteer </a></li>
+                <li><a href="#about"> About </a></li>
+                <li><a href="#events"> Events </a></li>      
+                <li><a href="#newsletter"> Newsletter </a></li>
+                <li><a href="#volunteer"> Volunteer </a></li>
                 <li><button class="btn-nav" href="#"> Reach out </button></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <section class="home-section" >
+    <section class="home-section js-home-section" id="home">
        <div class="row" >     
           <div class="col span-custom-1 herobox1">
             <h2 class="home-sec-h2"> Let brotherly love continue... </h2>
@@ -50,7 +50,7 @@
         </div>
     </section>
 
-    <section class="about-section" >
+    <section class="about-section" id="about" >
         <div class="row">
             <div class="col span-1-of-2 aboutBox1">
                 <img class="about-us-img" src="images/About Us.png" alt="About Us">
@@ -71,7 +71,7 @@
         </div>
     </section>
 
-    <section class="events-section">
+    <section class="events-section" id="events">
         <div class="row">        
             <div class="col  span-1-of-3">
                 <h3 class="first-event-h3" >Past Events</h3>
@@ -123,7 +123,7 @@
         </div>
     </section>
 
-    <section class="newsletter-section">
+    <section class="newsletter-section" id="newsletter">
         <div class="row">
             <h3>Receive Our Newsletters</h3>
             <img class="newsletter-img" src="images/Newsletter.png" >
@@ -135,7 +135,7 @@
         </div>  
     </section>
 
-    <section class="volunteer-section">
+    <section class="volunteer-section" id="volunteer">
         <div class="row">
             <div class="col span-1-of-2">
                 <h3>Volunteer With Us</h3>
@@ -203,5 +203,10 @@
         </div>
     </section>
 
-</body>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/selectivizr@1.0.3/selectivizr.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/script.js"></script>
 </html>
