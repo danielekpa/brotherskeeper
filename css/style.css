@@ -1,0 +1,390 @@
+/* ---------------------------------------- */
+/*  NAV BAR    */
+/* ---------------------------------------- */
+
+nav {
+  width: 100%;
+  background-color: #191919;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 100px;
+  width: auto;
+  cursor: pointer;
+  /* float: left; */
+  /* margin-top: 5px; */
+}
+
+.nav-elements {
+  list-style: none;
+  display: flex;
+  gap: 4.1rem;
+  align-items: center;
+  /* justify-content: space-evenly; */
+}
+
+.nav-elements li {
+  position: relative;
+}
+
+.nav-elements li a:link,
+.nav-elements li a:visited {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: 400;
+  padding: 8px 0;
+
+  transition: all 0.3s;
+}
+
+/*
+.nav-elements li a:link::before,
+.nav-elements li a:visited::before {
+  content: "\2022";
+  display: block;
+  width: 5%;
+  
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translateX(-50%);
+
+  color: #fff;
+} */
+/* border-bottom: 4px dotted transparent; */
+
+.nav-elements li a:hover,
+.nav-elements li a:active {
+  /* transition: border-bottom 0.2s, color 0.2s;
+  border-bottom: 4px dotted #ffbd59; \2022 */
+  color: #ffbd59;
+}
+
+.nav-elements li a:hover::after,
+.nav-elements li a:active::after {
+  content: "";
+  display: block;
+
+  width: 8px;
+  height: 8px;
+  /* padding-top: 5%; */
+  background-color: #ffbd59;
+  border-radius: 50%;
+
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  transform: translateY(50%);
+}
+
+.btn-nav {
+  background-color: #ffbd59;
+  border-radius: 0.8rem;
+  color: #000;
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding: 1.8rem 5.6rem;
+  display: inline-block;
+  border: 1px solid transparent;
+
+  transition: all 0.3s;
+}
+
+.btn-nav:hover {
+  background-color: #191919;
+  border: 1px solid #ffbd59;
+  color: #ffbd59;
+}
+
+/* ---------------------------------------- */
+/*  HERO SECTION    */
+/* ---------------------------------------- */
+
+.hero-section {
+  padding: 4.8rem 0 9.6rem 0;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  column-gap: 3.2rem;
+  row-gap: 6.4rem;
+}
+
+.hero-grid-1 {
+  margin: 21rem 0 28rem 0;
+}
+
+.hero-heading {
+  font-size: 4rem;
+  margin-bottom: 3.2rem;
+}
+
+.hero-long-copy {
+  font-size: 1.6rem;
+  line-height: 1.6;
+
+  margin-bottom: 4.8rem;
+}
+
+.hero-grid-2 {
+  margin-top: auto;
+}
+
+.hero-img {
+  width: 100%;
+  margin-top: auto;
+}
+
+/* ---------------------------------------- */
+/*  ABOUT  SECTION    */
+/* ---------------------------------------- */
+
+.about-section {
+  padding-top: 16rem;
+  padding-bottom: 21rem;
+  background-color: #fafafa;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 1.6rem;
+  row-gap: 9.6rem;
+}
+
+.about-us-img {
+  width: 100%;
+  padding-right: 7.4rem;
+}
+
+.about-desc-box {
+  padding-top: 5rem;
+}
+
+.about-heading {
+  font-size: 3.2rem;
+}
+
+.about-long-copy {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  font-style: normal;
+  font-weight: 400;
+
+  /* margin-bottom: 1rem; */
+}
+
+/* ---------------------------------------- */
+/*  EVENTS  SECTION    */
+/* ---------------------------------------- */
+
+.events-section {
+  padding: 15rem 0;
+}
+
+.event-grid {
+  column-gap: 3.2rem;
+}
+
+.first-event-h3 {
+  text-align: right;
+}
+
+.second-event-h3 {
+  text-align: center;
+  font-weight: 300;
+}
+
+.third-event-h3 {
+  text-align: left;
+  font-weight: 300;
+}
+
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Add some padding inside the card container */
+.card-info-container {
+  padding: 0px 0px;
+  background-color: #f0f0f0;
+}
+
+.card-info-container::before {
+  float: left;
+  height: 7.2rem;
+  background-color: #a60909;
+  content: "   ";
+  width: 0.8rem;
+  margin: 0;
+}
+
+h5 {
+  font-weight: 500;
+  font-size: 2rem;
+  display: block;
+  padding: 1.6rem 5rem 0px 2rem;
+  margin-bottom: 1.6rem;
+  line-height: 1.5;
+}
+
+.cardP {
+  padding: 0 10rem 0 2rem;
+  line-height: 1.6;
+  font-size: 1.6rem;
+}
+
+.cardLabel {
+  display: inline-block;
+  background-color: #99e3b9;
+  color: #008037;
+  border-radius: 4px;
+  padding: 3px 8px;
+  margin: 15px 0px 15px 20px;
+  text-transform: uppercase;
+  font-size: 100%;
+}
+
+/* ---------------------------------------- */
+/*  NEWSLETTER  SECTION    */
+/* ---------------------------------------- */
+
+.newsletter-section {
+  background-color: #fafafa;
+  padding-top: 17.1rem;
+  padding-bottom: 8rem;
+
+  text-align: center;
+}
+
+.newsletter-text {
+  font-size: 1.6rem;
+  line-height: 1.6;
+
+  margin-bottom: 3.2rem;
+}
+
+/* ---------------------------------------- */
+/*  VOLUNTEER  SECTION    */
+/* ---------------------------------------- */
+
+.volunteer-section {
+  padding-top: 15rem;
+  padding-bottom: 18rem;
+}
+
+.vol-grid {
+  column-gap: 4.8rem;
+  grid-template-columns: 1.5fr 1fr;
+}
+
+.volunteer-text-box {
+  padding-top: 9.7rem;
+  padding-right: 3.2rem;
+}
+
+.volunteer-heading {
+  font-size: 3.2rem;
+}
+
+.volunteer-text {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  margin-bottom: 3.2rem;
+}
+
+.volunteer-img-box {
+  /* padding-left: 6.4rem; */
+  /* align-self: end; */
+  display: grid;
+  width: 100%;
+}
+
+.img-volunteer {
+  justify-self: flex-end;
+}
+
+/* ---------------------------------------- */
+/*  PARTNERSHIP  SECTION    */
+/* ---------------------------------------- */
+
+.partner-section {
+  background: #fafafa;
+  text-align: center;
+  padding: 10rem 0;
+}
+
+.partner-text {
+  font-size: 1.6rem;
+  line-height: 1.2;
+}
+
+/* ---------------------------------------- */
+/*  FOOOTER  SECTION    */
+/* ---------------------------------------- */
+
+.footer-section {
+  background: #191919;
+  color: #fff;
+  padding-top: 4rem;
+  padding-bottom: 6.5rem;
+}
+
+.footer-grid {
+  column-gap: 9.7rem;
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.6rem;
+}
+
+.footer-header {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #ffbd59;
+}
+
+.footer-items {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+.footer-items li {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  font-size: 1.6rem;
+
+  transition: all 0.3s;
+}
+
+.footer-items li:hover {
+  /* color: #ffbd59; */
+  cursor: pointer;
+}
+
+.footer-items img {
+  width: 2rem;
+  height: 2rem;
+}

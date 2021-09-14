@@ -1,0 +1,95 @@
+/* 
+Our colors -> #FFBD59, #191919, #008037, #A60909, #99E3B9
+ */
+
+/* BASIC SETUP */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  /* text-rendering: optimizeLegibility; Enables text render in the best way  */
+}
+
+body {
+  color: #000;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.grid {
+  display: grid;
+  /* margin-bottom: 9.6rem; */
+}
+
+.grid--col--2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--col--3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.container {
+  max-width: 128.8rem;
+  margin: 0 auto;
+  padding: 0 2.4rem;
+}
+
+h2,
+h3 {
+  font-weight: 600;
+  font-style: normal;
+  word-spacing: 0.4rem;
+  margin-bottom: 3.2rem;
+}
+
+h2 {
+  font-size: 4rem;
+  line-height: 1.2;
+}
+
+h3 {
+  font-size: 3.2rem;
+  line-height: 1.2;
+}
+
+.btn:link,
+.btn:visited {
+  font-size: 1.6rem;
+
+  display: inline-block;
+
+  background-color: #ffbd59;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 0.8rem;
+  color: #191919;
+  text-align: center;
+  padding: 1.6rem 4.8rem;
+  border: 1px solid transparent;
+
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  /* transition: background-color 0.2s, color 0.2s, border 0.2s; */
+  background-color: #fff;
+  border: 1px solid #ffbd59;
+  color: #ffbd59;
+}
+
+.learn-more {
+  display: block;
+  color: #000;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.6;
+
+  margin-top: 1rem;
+}
